@@ -1,50 +1,33 @@
 <template>
-    <div class=" mt-[10vh] h-[90vh] p-5 flex flex-col items-center justify-center space-y-5">
+    <div class=" mt-[10vh] min-[90vh] p-5 flex flex-col items-center justify-center space-y-5">
         <h1 class=" font-bold text-5xl text-center text-red-500" >Arma tu pizza</h1>
-        <div class=" w-full" >
-            <form class=" flex flex-col items-center space-y-5">
-                <select class=" w-full rounded bg-red-500 text-white py-2 px-4 text-xl" name="" id="">
-                    <option value="">Tamaño</option>
-                    <option value="chica">Chica</option>
-                    <option value="mediana">Grande</option>
-                    <option value="grande">mediana</option>
-                </select>
-                <select class=" w-full rounded bg-red-500 text-white py-2 px-4 text-xl" name="" id="">
-                    <option value="">Tipo de salsa</option>
-                    <option value="jitomate">Salsa de jitomate</option>
-                    <option value="frijoles">Frijoles</option>
-                </select>
-                <div className='w-full space-y-10 flex flex-col items-center'>
-                    <h2 className='text-center text-3xl text-red-500 font-black'>Ingredientes</h2>
-                    <div className='w-[90%] space-x-3 flex justify-between flex-wrap'>
-                        <div>
-                            <input type="checkbox" id="Piña" value="Piña"/> 
-                            <label className='ml-3 text-xl text-red-500' htmlFor="Piña">Piña</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Jamon" value="Jamon"/> 
-                            <label className='ml-3 text-xl text-red-500' htmlFor="Jamon">Jamon</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Peperonni" value="Peperonni"/> 
-                            <label className='ml-3 text-xl text-red-500' htmlFor="Peperonni">Peperonni</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Salami" value="Salami"/> 
-                            <label className='ml-3 text-xl text-red-500' htmlFor="Salami">Salami</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="4 quesos" value="4 quesos"/> 
-                            <label className='ml-3 text-xl text-red-500' htmlFor="4 quesos">4 quesos</label>
-                        </div>
-                    </div>
+        <form className=' space-y-5 flex flex-col items-center' action="#">
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="nombre">Nombre</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='nombre' />
                 </div>
-                <button class=" w-[80%] bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</button>
-            </form>
-            <div class=" hidden" >
-                <img src="https://i.imgur.com/f2rhzVx.png" alt="">
-            </div>
-        </div>
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="telefono">Telefono</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="number" id='telefono' />
+                </div>
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="email">Correo Electronico</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='email' />
+                </div>
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="colonia">Colonia</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='colonia' />
+                </div>
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="calle">Calle</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='calle' />
+                </div>
+                <div className='flex flex-col'>
+                    <label className='text-xl font-bold text-red-500 text-primary' htmlFor="referencias">Referencias</label>
+                    <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='referencias' />
+                </div>
+                <button class=" w-[80%] text-xl bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</button>    
+        </form>
     </div>
 </template>
 
