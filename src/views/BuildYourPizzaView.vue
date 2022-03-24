@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <button class=" w-[80%] bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</button>
+                <router-link to="/order-view" class=" w-[80%] flex justify-center items-center bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</router-link>
             </form>
             <div class=" hidden" >
                 <img src="https://i.imgur.com/f2rhzVx.png" alt="">

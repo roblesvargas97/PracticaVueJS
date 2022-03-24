@@ -26,7 +26,7 @@
                     <label className='text-xl font-bold text-red-500 text-primary' htmlFor="referencias">Referencias</label>
                     <input className='text-xl font-normal border-2 rounded focus:border-green-600 py-1 px-2' type="text" id='referencias' />
                 </div>
-                <button class=" w-[80%] text-xl bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</button>    
+                <router-link to="/" class=" w-[80%] flex justify-center items-center text-xl bg-orange-400 py-2 px-4 rounded-full text-white font-bold" >Ordenar</router-link>    
         </form>
     </div>
 </template>
