@@ -6,17 +6,20 @@
   <Header/>
   <HeaderMobile/>
   <router-view/>
+  <Footer/>
 </template>
 
 <script>
 import HeaderMobile from '@/components/HeaderMobile.vue';
 import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderMobile,
-    Header
+    Header,
+    Footer,
   }
 }
 
