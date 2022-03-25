@@ -24,6 +24,11 @@ const routes = [
     path: '/order-view',
     name: 'orderView',
     component: () => import ('../views/OrderView.vue')
+  },
+  {
+    path: '/owner-view',
+    name: 'ownerView',
+    component: () => import ('../views/OwnerView.vue')
   }
 ]
 

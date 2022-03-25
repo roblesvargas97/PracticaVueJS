@@ -11,7 +11,7 @@
         <router-link v-on:click="setShowMenuFalse" class=" text-xl font-bold text-orange-400 bg-white p-2 w-full text-center rounded" to="/" >Inicio</router-link>
         <router-link v-on:click="setShowMenuFalse" class=" text-xl font-bold text-orange-400 bg-white p-2 w-full text-center rounded" to="/menu" >Menu</router-link>
         <router-link v-on:click="setShowMenuFalse" class=" text-xl font-bold text-orange-400 bg-white p-2 w-full text-center rounded" to="/build-pizza" >Arma tu pizza</router-link>
-        <router-link v-on:click="setShowMenuFalse" class=" text-xl font-bold text-orange-400 bg-white p-2 w-full text-center rounded" to="/build-pizza" >Arma tu pizza</router-link>
+        <router-link v-on:click="setShowMenuFalse" class=" text-xl font-bold text-orange-400 bg-white p-2 w-full text-center rounded" to="/owner-view" >Vista Administrador</router-link>
       </nav>
     </div>
 </template>
